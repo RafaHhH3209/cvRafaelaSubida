@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mi Portafolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="portafolio.css">
+    <!--Iconos utiliados de:
+    <a href="https://www.flaticon.es/iconos-animados-gratis/habilidades-blandas" title="habilidades-blandas iconos animados">Habilidades-blandas iconos animados creados por Freepik - Flaticon</a>
+    -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <header>
+        <div class="container-fluid navegacion-img"> <!-- container-fluid: items ocupen todo el ancho de la pantalla -->
+            <div class="navegacion-contenido">  <!-- clase utilizada para dar estilo a la imagen y el texto -->
+                <nav>
+                    <ul class="nav justify-content-end"> <!-- Utilizamos: la clase nav que vuelve a ul en una barra de navegacion.
+                                                         justify-content-end es parte de flexblox que alinea el contenido a la derecha del contenedor -->
+                        <!-- Los enlaces apuntarán a la misma pag -->
+                        <li><a href="#">Sobre Mi</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#habilidades">Habilidaes</a></li>
+                        <li><a href="#contactame">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navegacion-letras"> <!-- estilo para la barra de navegacion (letras) -->
+                <h2>Julia Herrera</h2>
+                <h6>
+Soy estudiante de ingenieria de sistemas informaticos.
+Me apaciona la tecnología y estoy constantemente 
+buscando nuevos desafios.
+                </h6>
+            </div>
+            <div class="navegacion-imgMia"> <!-- estilo para la imagen (este correctamente posicionada) -->
+                <!-- <img src="IMG/Self-Portrait with Death Playing the Fiddle - Arnold Böcklin - Google Arts & Culture.jfif" alt="Creadora"> -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="proyectos"> <!-- La lista Proyectos nos redireccionará aquí -->
+            <h2 class="subtitulo-proyectos">Proyectos</h2> 
+            <div class="conteiner-ProyectosIconos d-none d-lg-block"> <!--conteiner-ProyectosIconos: iconos orientados al texto Proyectos -->
+                <!--d-none d-lg-block se utiliza para: Ocultar el elemento en pantallas pequeñas y medianas, pero lo muestra en pantallas grandes.--> 
+                <div class="iconoRobot">
+                    <img src="IMG/ICONOS/chatbot-unscreen.gif" alt="robot">
+                </div>
+                <div class="iconoJuegos">
+                    <img src="IMG/ICONOS/juego-de-azar-unscreen.gif" alt="juegos">
+                </div>
+            </div>
+    
+            <article class="proyectos-protafolio"> <!-- proyectos-protafolio: redirecciona las imagenes una al lado de otra (evita filas) -->
+                <div class="primeraSeccion d-none d-lg-block p-5"> <!--d-none d-lg-block se utiliza para: Ocultar el elemento en pantallas pequeñas y medianas, pero lo muestra en pantallas grandes.--> 
+                    <a href=""><h5 class="idiomas">Página Web De Idiomas</h5></a>
+                    <hr>
+                    <img src="IMG/LOGO.png" alt="primer Proyecto">
+                    <h6>Este fue mi primer proyecto.
+    Utilicé html, css, javaScript  y Boostrap 5.
+    Fue un poco dificil la implementación de los sonidos con JavaScript, aún estoy mejorándolo.
+                    </h6>
+                    <a href=""><h5>Proyecto Futuro</h5></a>
+                    <hr>
+                    <img src="IMG/imgProvicional.jpg" alt="Proyecto">
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Odio odit consequatur nulla ipsam iste animi aliquam at 
+                    </h6>
+                    <a href=""><h5>Proyecto Futuro</h5></a>
+                    <hr>
+                    <img src="IMG/imgProvicional.jpg" alt="Proyecto">
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Odio odit consequatur nulla ipsam iste animi aliquam at 
+    praesentium exercitationem ullam tempora id, molestias 
+    delectus accusantium illo sit rerum aperiam ad.</h6>
+                </div>
+                <div class="segundaSeccion d-none d-lg-block p-5"> <!--d-none d-lg-block se utiliza para: Ocultar el elemento en pantallas pequeñas y medianas, pero lo muestra en pantallas grandes.--> 
+                    <a href=""><h5>Proyecto Futuro</h5></a>
+                    <hr>
+                    <img src="IMG/imgProvicional.jpg" alt="Proyecto">
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Odio odit consequatur nulla ipsam iste animi aliquam at 
+                    </h6>
+                    <a href=""><h5>Proyecto Futuro</h5></a>
+                    <hr>
+                    <img src="IMG/imgProvicional.jpg" alt="Proyecto">
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Odio odit consequatur nulla ipsam iste animi aliquam at 
+                    </h6>
+                    <a href=""><h5>Proyecto Futuro</h5></a>
+                    <hr>
+                    <img src="IMG/imgProvicional.jpg" alt="Proyecto">
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Odio odit consequatur nulla ipsam iste animi aliquam at 
+    praesentium exercitationem ullam tempora id, molestias 
+    delectus accusantium illo sit rerum aperiam ad.</h6>
+                </div>
+            </article>
+            
+    
+                <!--Dispotivos pequeños-->
+                <div id="carousel-videos" class="carousel slide d-block d-lg-none" data-bs-ride="carousel"> <!--d-block d-lg-none: Muestra el elemento solo en pantallas pequeñas y medianas, ocultándolo en pantallas grandes.--> 
+                    <div class="carousel-inner">
+                      <div class="carousel-item active itemCoruselImg">
+                        <a href="" class="proyectoTexto"><h5>Página Web De Idiomas</h5></a>
+                        <img src="IMG/LOGO.png" class=" mx-auto d-block w-10 imgC" alt="proyecto">
+                        <h6>Este fue mi primer proyecto.
+    Utilicé html, css, javaScript  y Boostrap 5.
+    Fue un poco dificil la implementación de los 
+    sonidos con JavaScript, aún estoy mejorándolo.</h6>
+                      </div>
+                      <div class="carousel-item  itemCoruselImg">
+                        <a href="" class="proyectoTexto"><h5>Proyectos</h5></a>
+                        <img src="IMG/imgProvicional.jpg" class="mx-auto d-block w-10 imgC" alt="proyecto">
+                        <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Odio odit consequatur nulla ipsam iste animi aliquam at </h6>
+                      </div>
+                      <div class="carousel-item  itemCoruselImg">
+                        <a href="" class="proyectoTexto"><h5>Proyectos</h5></a>
+                        <img src="IMG/imgProvicional.jpg" class="mx-auto d-block w-10 imgC" alt="proyecto">
+                        <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Odio odit consequatur nulla ipsam iste animi aliquam at </h6>
+                      </div>
+                      <div class="carousel-item  itemCoruselImg">
+                        <a href="" class="proyectoTexto"><h5>Proyectos</h5></a>
+                        <img src="IMG/imgProvicional.jpg" class="mx-auto d-block w-10  imgC" alt="proyecto">
+                        <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Odio odit consequatur nulla ipsam iste animi aliquam at </h6>
+                      </div>
+                    </div>
+                    <!-- Botones para el carrusel pequeño -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-videos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-videos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                    </button>
+                  </div>
+        </section>
+
+              
+
+
+
+        <section id="habilidades"> <!-- La lista Habilidades nos redireccionará aquí-->
+            <h2 class="subtitulo-habilidades">Habilidades</h2>
+            <div class="conteiner-HabilidadesIconos d-none d-lg-block"> <!--d-none d-lg-block se utiliza para: Ocultar el elemento en pantallas pequeñas y medianas, pero lo muestra en pantallas grandes.--> 
+                <div class="iconoPensamiento">
+                    <img src="IMG/ICONOS/pensamiento-creativo-unscreen.gif" alt="pensamiento">
+                </div>
+                <div class="iconoAdapt">
+                    <img src="IMG/ICONOS/adaptabilidad-unscreen.gif" alt="adaptabilidad">
+                </div>
+            </div>
+            <section class="habilidades">
+                <div class="filasHabilidades">
+                    <div class="habilidad">
+                        <h6 class="JavaScript">JavaScript</h6>
+                        <img src="https://i.pinimg.com/564x/69/e2/b3/69e2b3be6001c33141a95557a5f2cbcd.jpg" alt="JavaScript">
+                    </div>
+                    <div class="habilidad p-2">
+                        <h6 class="Css">CSS</h6>
+                        <img src="IMG/css.png" alt="CSS">
+                    </div>
+                    <div class="habilidad p-2">
+                        <h6 class="html">HTML</h6>  
+                        <img src="IMG/html.png" alt="HTML">          
+                    </div>
+                    <div class="habilidad p-2">
+                        <h6 class="c#">C#</h6>    
+                        <img src="IMG/c.png" alt="C#">        
+                    </div>
+                    <div class="habilidad p-2">
+                        <h6 class="python">Python</h6>
+                        <img src="IMG/python.png" alt="PYTHON">
+                    </div>
+                    <div class="habilidad p-2">
+                        <h6 class="visualStudio">Visual Studio Code</h6>
+                        <img src="IMG/visualStudio.png" alt="VisualStudio">
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contactame"> <!-- La lista Contactame nos redireccionará aquí-->
+            <h2 class="text-center contactameSubtitulo">Contactame Aquí</h2>
+            <div>
+                <h5 class="redesSociales Contacto pt-3">Mis redes sociales: </h5>
+            </div>
+            <div class="container Contacto pt-5 mt-5">
+                <div>
+                    <div class="items_contacto">                    
+                        <div>
+                            <h6 class="texto-contactame pt-5">Enviame un correo</h6>
+                        </div>
+                            
+                            <img src="IMG/ICONOS_CONTACTO/mensaje-unscreen.gif" alt="enviar correo" class="enviarMensaje">
+                            <h6>Mi correo: rafaela.herrera.h@gmail.com</h6>   
+                    </div>
+                    <div class="items_contacto">
+                        <div>
+                            <h6 class="texto-contactame">Enviame un mensaje o llámame</h6>
+                        </div>
+                        <img src="IMG/ICONOS_CONTACTO/telefono-unscreen.gif" alt="enviar mensaje" class="enviarMensaje">
+                        <h6> Mi telefono: 7777777</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-center formulario_contacto pt-5 pb-5">Ingrese Sus Datos</h2>
+            <div class="container-fluid formularioContacto"> <!--ocupa todo el ancho de la pantallas-->
+                <div class="row"> <!--Filas-->
+                    <div class="col-md-2"> <!--Columnas para pantallas medianas. md-2 ocipa 16.6%-->
+                        
+                    </div>
+                    <div class="col-md-8"> <!--Columnas para pantallas medianas. md-8 ocipa 66.6%s-->
+                        <form action="" method="get"> <!--Define formulario. url: u
+                            url donde se enviarán los datos del registro. 
+                            get: envía los datos como en la url-->
+                            <div class="row">
+    
+                                <div class="col-md-12 col-lg-4"> <!--Columna al 100% en medianas, 33.3% en grandes-->
+                                    <div class="form-group">
+                                        <label for="">Nombres</label>
+                                        <input type="text"
+                                          class="form-control" name="nombres" id="nombres" placeholder="Ingrese su nombre" required>
+                                    </div>
+                                </div>
+
+                            <!--Partirlo en dos partes-->
+                                <div class="col-md-6 col-lg-4"><!--Columna al 100% en medianas, 33.3% en grandes-->
+                                    <div class="form-group"><!--Diseño mas agrupado-->
+                                      <label for="">Apellido Paterno y Materno</label>
+                                      <input type="text"
+                                        class="form-control" name="apPateroM" id="apPateroM" placeholder="Ingrese su apellido paterno y materno" required>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <form class="form-inline">
+                                        <div class="form-group"> 
+                                            <label for="">Correo electronico</label>
+                                            <input type="email" name="correo" id="correo" class="form-control" placeholder="Ingrese su correo electronico" required>
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--Hasta aquí-->
+    
+                            <!--Text area-->
+                            <div class="form-group">
+                              <label for="">Comentarios</label>
+                              <textarea class="form-control" name="" id="" rows="3"></textarea>
+                            </div>
+    
+                            <!--grande: col-md-12-->
+                            <button type="submit" class="btn col-md-12 p-3 w-50 bottonRegistrar">Registrar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--MOVIMIENTO DEL CARRUSEL-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

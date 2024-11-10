@@ -1,0 +1,364 @@
+body /*Evitar que tengan padding y margin (todo)*/
+{
+    margin: 0;
+    padding: 0%;
+    height: 100%;      
+}
+/*Titulos de Proyectos (hace que cada título se agrande)*/
+a>h5:hover  
+{
+    color: #3dd8ff;
+    text-decoration: none; /*quita el subrayado*/
+    font-size: 25px;
+}
+/*Barra navegación, Animación (hace que las teclas se posicionen abajo) */
+li:hover 
+{
+    font-size: 15px;
+    color: #9e3636;
+}
+a:visited /*Los links cuando esten visitados se colocará en verde*/
+{
+    color: #28a458;
+    font-size: 30pc;
+    text-decoration: none; /*quita el subrayado*/
+}
+a:focus
+{
+    color: #9e3636;
+    font-size: 30pc;
+    text-decoration: none; /*quita el subrayado*/
+}
+
+/*BARRA NAVEGACION*/
+.navegacion-contenido 
+{
+    position: absolute; /*posiciona al nav y el contenido del texto junto con img en sus lugares */
+    bottom: 90%; /*posiciona la barra de navegación arriba*/
+    left: 70%; /*posiciona la barra de navegación al lado derecho */
+}
+/*Imagen de fondo*/
+.navegacion-img
+{    
+    display: flex; /*posiciona la imagen al lado derecho*/
+    background-image: url(https://i.pinimg.com/564x/fd/b9/82/fdb9820470ee205eea6dd19865acb73e.jpg);
+    height: 60vh; /*hace que la imagen */
+
+    /*hace que la imagen sea responsiva, no se repita y que este ccentrada*/
+    background-size: cover;                      
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    opacity: 0.8; /*opacidad de la imagen*/
+    position: relative;/*la barra de navegación este arriba*/
+
+    /*alinea el texto y la imagen al centro de toda la imagen de fondo*/
+    align-items: center;
+    justify-content: center;
+}
+.navegacion-img a,li
+{
+    text-decoration: none; /*quita el subrayado del texto*/
+    font-size: 0.8pc;
+    padding-left: 15px;
+    color: rgb(255, 255, 255);  
+}
+/*BARRA NAVEGACION LETRAS*/
+.navegacion-letras
+{
+    padding-left: 1pc;
+}
+.navegacion-letras h2, .navegacion-letras h6
+{
+    margin: 1px;
+    padding-bottom: 30px;
+    color: #ffffff;
+}
+.navegacion-letras h2
+{
+    font-size: 50px;
+}
+.navegacion-letras h6
+{
+    font-size: 1pc;
+    font-weight: 300;
+    white-space: pre-wrap; /*hace que las letras tenga la misma posición real*/
+    padding-right: 10pc;
+        /*Letras para texto comun*/
+        font-family: "Varela Round", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+/*BARRA NAVEGACION IMG-MIA*/
+/*vuelve la imagen pequeña*/
+.navegacion-imgMia
+{
+    max-width: 10pc;
+}
+/*alinea la imagen y la vuelve pequeña*/
+.navegacion-imgMia img
+{
+    width: 110%;
+    height: 100%;
+    border-radius: 10%; /*redondeo de las esquinas de la img*/
+    margin-top: 10px;
+}
+/*HASTA AQUÍ BARRA NAVEGACION*/
+
+
+/*CONTENIDO*/
+/*PROYECTO*/
+
+/*dispositivos pequeños*/
+/*alinea las imagenes de los proyectos al centro*/
+.imgC
+{
+    max-width: 10pc;
+    align-items: center;
+    justify-content: center;
+}
+/*texto centrado y conforme a la alineacion del html*/
+.carousel-item h6
+{
+    white-space: pre-wrap;
+    text-align: center;
+    margin-top: 50px;
+        /*Letras para texto comun*/
+        font-family: "Varela Round", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+/*hasta aquí dispositivos pequeños*/
+
+/*vuelve al subtitulo mas grande y lo alinea al centro*/
+.subtitulo-proyectos
+{
+    padding: 5pc 0%;
+    font-size: 5pc;
+    text-align: center;
+    justify-content: center;
+}
+/*iconos orientados al texto*/
+.conteiner-ProyectosIconos
+{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+}
+.iconoRobot, .iconoJuegos
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.iconoRobot img, .iconoJuegos img
+{
+    min-width: 20px;
+    max-width: 10pc;
+}
+.iconoRobot
+{
+    right: 50pc;
+    bottom: -5pc;
+}
+.iconoJuegos
+{
+    left: 60pc;
+    bottom: 20px;
+}
+/*hasta aquí los iconos de proyectos*/
+
+/*dispositivos grandes*/
+/*alinea lel contendio al centro (img y texto)*/
+.proyectos-protafolio
+{
+    display:flex; /*el contendio este alineado uno al lado del otro*/
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3pc;
+}
+/*img esten pequeñas*/
+.proyectos-protafolio img
+{
+    display: block; /*posiciona al centro del texto*/
+    width: 10pc;
+    margin: auto; /*posiciona automaticamente al centro*/
+    padding: 1pc 1pc;
+}
+/*define la alineacion de las letras al centro de la img*/
+.proyectos-protafolio a,h5,h6
+{
+    align-items: center;
+    justify-content: center;
+    display: flex; /*pociona las letras al centro*/
+    padding: 20px 0;
+    position: relative;
+    color: rgb(45, 45, 45);
+}
+/*posiciona al centro el contendio de las letras*/
+.proyectos-protafolio h6
+{
+    text-align: center;
+        /*Letras para texto comun*/
+        font-family: "Varela Round", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+/*hasta aquí dispositivos grandes*/
+/*HASTA AQUI PROYECTOS*/
+
+/*HABILIDADES*/
+/*iconos de habilidaes*/
+.conteiner-HabilidadesIconos
+{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+}
+/*los iconos se podrán mover*/
+.iconoPensamiento, .iconoAdapt
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.iconoPensamiento img, .iconoAdapt img
+{
+    min-width: 20px;
+    max-width: 10pc;
+}
+.iconoPensamiento 
+{
+    bottom: 100px;
+    right: 60pc;
+}
+.iconoAdapt
+{
+    left: 70pc;
+    bottom: 100px;
+}
+/*hasta aquí iconos de habilidades*/
+/*el contenido tenga un fondo celeste y que las img esten posicionadas al centro*/
+.habilidades
+{
+    display: flex; /*la caja se vuelve flexible, permitiendo a las img estar centradas*/
+    background-color: #cef1ff;
+    padding: 5pc 0;
+    align-items: center;
+    justify-content: center;
+}
+/*el titulo de habilidades este centrado y tenga un color gris*/
+.subtitulo-habilidades 
+{
+    justify-content: center;
+    display: flex;
+    padding: 10pc 0;
+    font-size: 5pc;
+    color: #3e3e3e;
+}
+/*cada img estará centrada al medio y se colocarán en fila*/
+.habilidad 
+{
+    display: inline-block; /*impide que se coloquen todos en columna*/
+    text-align: center;
+    margin: 10px;
+}
+/*las imagenes se volverán pequeñas*/
+.habilidades img 
+{
+    width: 5pc;
+}
+/*el titulo de cada habilidad tendrá estilo*/
+.habilidades h6 
+{
+    color: #3e3e3e;
+    font-size: 1.1pc;
+    padding: 15px 0;
+        /*Letras para texto comun*/
+        font-family: "Varela Round", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+/*HASTA AQUI HABILIDADES*/
+
+/*CONTACTO*/
+/*estilo al fondo*/
+.Contacto
+{
+    background-color: #dedede;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+/*el titulo de contactame tendrá estilo*/
+.contactameSubtitulo
+{
+    padding-top: 20pc;
+    padding-bottom: 5pc;
+    font-size: 5pc;
+}
+/*iconos de mensaje, corregir tamaño*/
+.enviarMensaje
+{
+    max-width: 80px;
+    margin: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    display: inline;
+}
+.Contacto h6
+{
+    position: relative;
+    display: inline;
+            /*Letras para texto comun*/
+            font-family: "Varela Round", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+}
+/*modificación del tamaño (mis redes sociales)*/
+.redesSociales h6
+{
+    font-size: 30px;
+    align-items: start;
+    display: flex;
+    padding: 10pc 0 10pc 0;
+            /*Letras para texto comun*/
+            font-family: "Varela Round", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+}
+.items_contacto
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*HASTA AQUI CONTACTO*/
+
+
+
+/*CONTACTO*/
+/*Formulario de registro*/
+.formularioContacto
+{
+    background-color: #3e3e3e;
+    color: #f9f9f9;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+/*Botton Registrar*/
+.bottonRegistrar
+{
+    max-width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #9e3636;
+    color: #cef1ff;
+}
+button:hover{
+    background-color: #3e3e3e;
+    color: #cef1ff;
+}
